@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Node()
+comment0.text=Constructor
+comment1.params=d\ n
+comment1.target=Node(int,\ Node)
+comment1.text=Constructor
+comment2.params=n
+comment2.target=void\ setLink(Node)
+comment2.text=Function\ to\ set\ link\ to\ next\ Node
+comment3.params=d
+comment3.target=void\ setData(int)
+comment3.text=Function\ to\ set\ data\ to\ current\ Node
+comment4.params=
+comment4.target=Node\ getLink()
+comment4.text=Function\ to\ get\ link\ to\ next\ node
+comment5.params=
+comment5.target=int\ getData()
+comment5.text=Function\ to\ get\ data\ from\ current\ Node
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

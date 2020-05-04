@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DAO_DTO_EXAMPLE/WebContent/PasswordUpdateSucceess.jsp&apos; to &apos;PasswordUpdateSuccess.jsp&apos;" description="Rename resource &apos;PasswordUpdateSucceess.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/PasswordUpdateSucceess.jsp" name="PasswordUpdateSuccess.jsp" stamp="1577774414194" updateReferences="true"/>
+</session>

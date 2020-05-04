@@ -1,0 +1,46 @@
+Linked List Prime split
+
+Description:
+    Split the given list into half. Basically all elements in odd positions go to odd list, and all elements in even position go to even list.
+If the list has loop then return only the elements that are part of the loop
+
+Input:
+
+11 3
+1 2 3 4 5 6 7 8 9 10 11
+
+Output:
+
+5
+3 5 7 9 11
+4
+4 6 8 10
+
+Explanation:
+    List has loop. Elements that are loop are 3 4 5 6 7 8 9 10 11
+
+Elements in odd positions
+    3, 5, 7, 9, 11
+Elements in even positions
+    4, 6, 8 10
+
+Input:
+
+11 -1
+1 2 3 4 5 6 7 8 9 10 11
+
+Output:
+
+6
+1 3 5 7 9 11
+5
+2 4 6 8 10
+
+Explanation:
+    List has no loop. Elements in the list 1 2 3 4 5 6 7 8 9 10 11
+
+Elements in odd positions
+    1, 3, 5, 7, 9, 11
+Elements in even positions
+    2, 4, 6, 8 10
+

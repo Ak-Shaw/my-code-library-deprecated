@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Area()
+comment1.params=
+comment1.target=void\ Rectangle()
+comment2.params=
+comment2.target=void\ Square()
+comment3.params=
+comment3.target=void\ Circle()
+comment4.params=
+comment4.target=void\ Triangle()
+comment5.params=
+comment5.target=void\ main()
+numComments=6

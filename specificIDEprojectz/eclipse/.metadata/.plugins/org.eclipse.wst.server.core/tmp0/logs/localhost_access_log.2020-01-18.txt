@@ -1,0 +1,17 @@
+127.0.0.1 - - [18/Jan/2020:10:10:59 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:11:01 +0530] "GET /InternetBankingProj/FundTransfer.jsp HTTP/1.1" 200 1054
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:11:59 +0530] "POST /InternetBankingProj/FundTransferServe HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:11:59 +0530] "GET /InternetBankingProj/FundTransferSuccess.jsp HTTP/1.1" 200 154
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:12:43 +0530] "POST /InternetBankingProj/FundTransferServe HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:12:43 +0530] "GET /InternetBankingProj/InvalidSourceAccount.jsp HTTP/1.1" 200 155
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:12:52 +0530] "POST /InternetBankingProj/FundTransferServe HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:12:52 +0530] "GET /InternetBankingProj/InvalidBeneficiaryAccount.jsp HTTP/1.1" 200 160
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:12:59 +0530] "POST /InternetBankingProj/FundTransferServe HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:12:59 +0530] "GET /InternetBankingProj/InvalidBeneficiaryAccount.jsp HTTP/1.1" 200 160
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:13:07 +0530] "POST /InternetBankingProj/FundTransferServe HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:13:07 +0530] "GET /InternetBankingProj/InsufficientBalance.jsp HTTP/1.1" 200 153
+127.0.0.1 - - [18/Jan/2020:10:16:14 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:16:38 +0530] "GET /InternetBankingProj/FundTransfer.jsp HTTP/1.1" 200 1054
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:10:16:40 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+127.0.0.1 - - [18/Jan/2020:12:35:16 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:12:35:19 +0530] "GET /InternetBankingProj/FD.jsp HTTP/1.1" 200 963

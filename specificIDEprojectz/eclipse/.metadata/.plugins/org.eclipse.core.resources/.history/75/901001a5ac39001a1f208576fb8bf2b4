@@ -1,0 +1,96 @@
+package master.servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import master.DAO.AccountDAO;
+import master.DAO.FundTransferDAO;
+import master.DTO.FundTransferDTO;
+
+
+/**
+ * Servlet implementation class FundTransferServe
+ */
+public class FundTransferServe extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		response.setContentType("text/html");
+		
+		String saccno=request.getParameter("saccno");
+		String baccno=request.getParameter("baccno");
+		String ifcs=request.getParameter("ifcs");
+		String bank=request.getParameter("bank");
+		double amount=Double.parseDouble(request.getParameter("amount"));
+		String tdate=request.getParameter("tdate");
+		
+		//validation
+		//------------------------------------------
+		
+		AccountDAO adao=new AccountDAO();
+		
+		boolean hasSaccno=adao.checkAccount(saccno);
+		System.out.println(hasSaccno);
+		
+		//dummyPrint
+		System.out.println("a");
+		
+		if(!hasSaccno)
+		{
+			System.out.println("SOURCE ACCOUNT MISMATCH");
+			response.sendRedirect("InvalidSourceAccount.jsp");
+		}
+
+//		//dummyPrint
+//		System.out.println("a");
+//				
+//		boolean hasBaccno=adao.checkAccount(baccno);
+//		
+//		if(!hasBaccno)
+//		{
+//			response.sendRedirect("InvalidBeneficiaryAccount.jsp");
+//		}
+//		
+//		//dummyPrint
+//		System.out.println("a");
+//				
+//				
+//		double bal=adao.getBalance(saccno);
+//		
+//		System.out.println(bal);
+//		if(bal<amount)
+//		{
+//			response.sendRedirect("InsufficientBalance.jsp");
+//		}
+//		
+//		//dummyPrint
+//		System.out.println("a");
+//				
+//		
+		//------------------------------------------
+		
+		FundTransferDTO ftdto=new FundTransferDTO();
+		
+		ftdto.setSaccno(saccno);
+		ftdto.setBaccno(baccno);
+		ftdto.setIfcs(ifcs);
+		ftdto.setBank(bank);
+		ftdto.setAmount(amount);
+		ftdto.setTdate(tdate);
+		
+		FundTransferDAO ftdao=new FundTransferDAO();
+		
+		ftdao.insertData(ftdto);
+		
+		response.sendRedirect("FundTransferSuccess.jsp");
+	}
+
+}

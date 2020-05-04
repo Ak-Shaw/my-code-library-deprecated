@@ -1,0 +1,17 @@
+Write a program to display any digit(n) from 0-9 using "7 segment  display". 
+
+For example:
+
+input : 5
+
+output :
+ _ 
+|_ 
+ _|
+
+input : 4
+
+output :
+
+|_|
+  |

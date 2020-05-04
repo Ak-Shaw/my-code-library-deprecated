@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=order
+comment0.target=MagicSquare(int)
+comment1.params=
+comment1.target=void\ magicFill1()
+comment2.params=
+comment2.target=void\ magicFill2()
+comment3.params=
+comment3.target=void\ magicFill3()
+comment4.params=
+comment4.target=void\ magicFill4()
+comment5.params=
+comment5.target=void\ magicPrint()
+comment6.params=num\ max
+comment6.target=void\ print(int,\ int)
+comment7.params=
+comment7.target=void\ clear()
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9
