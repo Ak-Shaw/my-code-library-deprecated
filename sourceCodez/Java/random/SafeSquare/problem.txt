@@ -1,0 +1,107 @@
+ Bob has a N*M chess board which contains any number of Rook,Bishop,Queen,Knight and a Special Piece.Bob given a configuration of the chess board, he has to find the number of safe squares in the chess board.
+
+Safe Square - It is a square in a chess board which doesn't have any piece on it and it cannot get attacked by any of the pieces that are in the chessboard in one single move.
+ 
+In chess board configuration the character 'R' represents Rook , 'K' represents Knight, 'Q' represents Queen, 'B' represents Bishop, 'S' represents Special Piece and '.' represents that there is no piece on that square.
+
+Chess moves for the pieces are given as following - 
+
+Queen's move - Diagonally, horizontally, or vertically any number of squares. They are unable to jump over pieces.
+
+Rook's move - Horizontally or vertically any number of squares. They are unable to jump over pieces.
+
+Bishop's move - Diagonally any number of squares. They are unable to jump over pieces.
+
+Knight's move - In an ‘L’ shape’: two squares in a horizontal or vertical direction, then move one square horizontally or vertically.
+They are able to jump over other pieces.
+
+Special Piece's move - It can move to any square within the same layer.They are able to jump over other pieces.
+
+
+Layers can be defined as concentric rectangles, for example -
+
+1111
+1221 (here 1 is the outermost(1st) layer and 2 is the innermost(2nd) layer)
+1221
+1111
+
+1111									
+1221	After Removing Outer Layer      			22
+1221 ------------------------------------->			22
+1111   we have inner layer which will be     (This the innermost layer for this example because after removing this we have left with nothing)
+											
+
+1111111
+1222221	(here 1 is the outermost layer and 2 is the innermost layer)
+1111111
+
+
+11111111
+12222221  (here 1 is the outermost(1st) layer, 2 is the 2nd layer, 3 is the innermost(3rd) layer)
+12333321                                                                                        
+12222221                                                                                         
+11111111                                                                                            
+
+
+Can you help Bob find the number of safe square in the chess board?
+
+Input Format -
+First line contains two space seperated integers representing the value of N and M respectively.
+
+Next N lines contain the configuration of the board where each line contains M characters.
+
+Constraints-
+
+1 <= N,M <= 100
+
+
+Output Format -
+A single line that contains an integer representing the number of safe square.
+
+=========
+Example 1
+=========
+Input -
+6 6
+......
+..R.S.
+......
+......
+......
+......
+
+Output -
+19
+
+Explanation - 
+Cells which are marked one below are not safe ie. attacked by some piece. 
+
+001000
+111110
+011010
+011010
+011110
+001000
+
+
+=========
+Example 2
+=========
+Input -
+5 5
+Q....
+.S...
+..K..
+.....
+.....
+
+Output -
+3
+
+Cells which are marked one below are not safe ie. attacked by some piece.  
+
+11111
+11111
+11110
+11111
+11010
