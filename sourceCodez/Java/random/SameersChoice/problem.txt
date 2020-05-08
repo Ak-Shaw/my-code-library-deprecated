@@ -1,0 +1,107 @@
+It’s difficult to choose the lucky number plate nowadays. According to Sameer any number plate which is a palindrome in its last four digits is lucky. So Sameer comes to you asking for your help.
+
+
+A string will be given to you (for e.g. AN-12-ABA-7777 or ABCD ). You need to verify if it’s a registered vehicle and a valid plate number in India.
+
+The current format of the registration index consists of 4 parts, They are:
+1) The first two letters indicate the State or Union Territory to which the vehicle is registered. The Vehicle codes for each state can be followed from here:
+    https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_India#Current_codes
+2) Followed by exactly two digit number which represents the sequential number of a district ranges from (00-99).
+3) The third part consists of one, two or three letters or no letters at all and all uppercase. 
+4) The fourth part contains exactly four digits unique to each plate ranges from (0000-9999).
+
+If the vehicle is registered by above rules then print "Yes" otherwise "No" without quotes.If "Yes" then check if the number plate is following the restricted pattern assigned to the vehicle.It will be a regex pattern for only fourth part. 
+
+For example:
+Car 87-94-56-9     # interpreted as [8][7-9][4-5][6-9] for the [1st][2nd][3rd][4th] digits inclusive.
+Bus 6-9996-9       # interpreted as [6-9][9][9][6-9] for the [1st][2nd][3rd][4th] digits inclusive.
+
+There will always be valid regex given to you and at least one valid 4 digit number can be made from it.So if given plate number is satisfying the pattern then print "Good" otherwise "Bad" without quotes.
+
+NOTE: If the vehicle pattern is not specified then by default the pattern would be "0-90-90-90-9". 
+
+If "Bad" then suggest a Number which will require a minimum amount of replacement in the digits which will be lexicographical smallest.
+And at last, you need to print all the vehicles plate number with the type of vehicle that are valid and good and will satisfy Sameer’s wish.
+
+For more clarification see examples.
+
+
+Input Format:
+
+First line will contain the N number of vehicles which have restriction with their pattern.
+Next N lines will contain space seperated two strings unique P & Q designating the type of vehicle(in lowercase) and a valid pattern for it respectively.
+Next line will contain number of queries T.
+Next T lines will contain two space seperated strings A and B the vehicle plate number and the vehicle type(in lowercase) respectively.
+
+Output Format:
+
+For each query print Yes or No if it is valid or not in single line.
+If Yes then print Good or Bad if the vehicle is following the pattern which is assigned for the vehilce in the same line .
+If Bad then also print the number which will be obtained in the same line.
+After processing all queries print X number of vehicles that satisifies all the conditions.
+Next X lines will contain vehicle's plate number and their type in the order as they come in input. 
+
+Constraints:
+
+1<=N,T<=50000
+1<=len(P),len(B)<=10
+1<=len(A)<=25
+Q will be pattern
+
+=========
+Example 1
+=========
+Input:
+
+4
+car 87-94-56-9        
+bus 5468
+truck 77-97-90-1
+motorbike 0-90-90-90-9
+3
+JH-45-ADA-8784 car
+JK-12-6556 motorbike
+RN-65-A7A-7878 truck
+
+
+
+Output: 
+
+Yes Bad 8746
+Yes Good
+No
+1
+JK-12-6556 motorbike
+
+
+Explanation: 
+In first test case pattern is [8][7-9][4-5][6-9] and number is 8784 for car. 3rd digit is not in the range so this vehicle is a Bad choice.8746 will be the best possible string.   
+Only one motorbike is respecting all the above conditions.
+
+
+=========
+Example 2
+=========
+Input:
+
+2
+car 45-945
+bus 787-97-9
+5
+JH-89-AL-4554 car
+AN-78-GHH-4504 motorbike
+RJ-54-FV-8989 scooter
+HY-456-GHV-788R car
+DHL-4775-7TG-RRRR car
+
+Output:
+
+Yes Bad 4545
+Yes Good
+Yes Good
+No 
+No
+0
+
+Explanation: 
+None of the vehicle's plate number which are good is following palindrome conditions.
