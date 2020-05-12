@@ -1,0 +1,43 @@
+Write a program to find the node at which the intersection of two singly linked lists begins.
+
+If the linked lists don't have any intersection return NULL
+Example - 
+3 -> 1 -> 7
+            \
+             9 -> 15 -> 7
+            /
+     2 -> 6
+    
+beginning of intersection = 9
+
+Input
+First line contains n, length of first linked list before intersection
+Next line contains n space seperated integers.
+third line contains m, length of second linked list before intersection
+Next line contains m space seperated integers.
+fifth line contains k, number of nodes in the common linked list
+next line contains k space seperated integers.
+
+Constraints
+0 <= N, M, K <= 10^5
+
+
+Output
+print the value of the starting node of the intersection
+
+=========
+Example 1
+=========
+Input
+3
+3 1 7
+2
+2 6
+3
+9 15 7
+
+Output
+9
+
+Explanation
+Refer to the image in problem statement.

@@ -1,0 +1,9 @@
+4
+car 87-94-56-9
+bus 5468
+truck 77-97-90-1
+motorbike 0-90-90-90-9
+3
+JH-45-ADA-8784 car
+JK-12-6556 motorbike
+RN-65-A7A-7878 truck

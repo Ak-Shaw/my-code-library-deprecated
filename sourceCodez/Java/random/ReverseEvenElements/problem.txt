@@ -1,0 +1,34 @@
+Given a linked list, the task is to reverse the "contiguous" even elements and print the updated linked list.
+
+
+Constraints
+0 <= N <= 10^5
+|A[i]| <= 10^9
+
+==========
+Example 1
+==========
+Input:
+8
+1 2 3 3 4 6 8 5
+
+Output:
+1 2 3 3 8 6 4 5
+
+Explanation:
+Initial list: 1 -> 2 -> 3 -> 3 -> 4 -> 6 -> 8 -> 5 -> NULL
+Reversed list: 1 -> 2 -> 3 -> 3 -> 8 -> 6 -> 4 -> 5 -> NULL
+Here 4, 6, 8 is continious and all elements are even so this sublist has been reversed.
+
+==========
+Example 2
+==========
+Input:
+3
+11 32 7
+
+Output:
+11 32 7
+
+Explanation:
+32 is the only even element hence only it is rotated.

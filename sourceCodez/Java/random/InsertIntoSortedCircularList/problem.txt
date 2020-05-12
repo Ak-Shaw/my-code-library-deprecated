@@ -1,0 +1,44 @@
+Given a node from a Circular Linked List which is sorted in ascending order, write a function to insert a value insertVal into the list such that it remains a sorted circular list. The given node can be a reference to any single node in the list, and may not be necessarily the smallest value in the circular list.
+If the list is empty (i.e., given node is null), you should create a new single circular list and return the reference to that single node. Otherwise, you should return the original given node.
+
+Input Format
+First line contains N, number of nodes in the linked list.
+The next line contains the N space seperated integers, representing the node of the circular linked list.
+Last line contains a single integer, the value that is to be inserted.
+
+Output Format
+Print the linked list starting at the head.
+
+Constraints
+0 <= N <= 10^5
+0 <= ListNode.val <= 2147483647
+0 <= insertVal <= 2147483647
+
+=========
+Example 1
+=========
+Input
+7
+4 5 9 10 0 1 2
+7
+
+Output
+4 5 7 9 10 0 1 2
+
+Explanation
+The insert value is 7 which is inserted between 5 and 9
+
+=========
+Example 2
+=========
+Input
+5
+1 2 3 4 7
+6
+
+Output
+1 2 3 4 6 7
+
+Explanation
+The insert value is 6 which is inserted between 4 and 7
+

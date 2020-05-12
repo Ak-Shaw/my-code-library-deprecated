@@ -1,0 +1,9 @@
+2
+car 45-945
+bus 787-97-9
+5
+JH-89-AL-4554 car
+AN-78-GHH-4504 motorbike
+RJ-54-FV-8989 scooter
+HY-45-GHV-788R car
+DH-45-7TG-RRRR car
