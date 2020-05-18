@@ -53,7 +53,6 @@ class Solution {
             
             int sum = val1 + val2 + carry;
             
-            //19
             int result = sum % 10;
             carry = sum / 10;
             

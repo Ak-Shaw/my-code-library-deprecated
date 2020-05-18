@@ -1,0 +1,31 @@
+Given a string S and a non-empty string P, find all the start indices of P's anagrams in S.
+
+Strings consists of lowercase English letters only and the length of both strings S and P will not be larger than 100000.
+
+Print the indices in increasing order.
+
+Input Format -
+First line contains two space seperated strings representing the value of S and P.
+
+Constraints-
+1 <= length(S),length(P) <= 100000
+
+
+Output Format -
+First line should contain the number of start indices.
+Next line should contain the incides in increasing order.
+
+=========
+Example 1
+=========
+Input -
+abab ab
+
+Output -
+3
+0 1 2
+
+Explanation-
+The substring with start index = 0 is "ab", which is an anagram of "ab".
+The substring with start index = 1 is "ba", which is an anagram of "ab".
+The substring with start index = 2 is "ab", which is an anagram of "ab".

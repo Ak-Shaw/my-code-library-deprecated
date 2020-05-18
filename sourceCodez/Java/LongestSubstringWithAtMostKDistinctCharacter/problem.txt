@@ -1,0 +1,27 @@
+Given a string S of length N, find the length of the longest substring T that contains at most K distinct characters.
+
+Input Format -
+First line contains two space seperated integers representing the value of N and K.
+Next line contains the string S.
+
+Constraints-
+1 <= N <= 100000
+0 <= K <= 100000
+
+
+Output Format -
+Print the length of the longest substring T that contains at most K distinct characters.
+
+=========
+Example 1
+=========
+Input -
+5 2
+eceba
+
+
+Output -
+3
+
+Explanation-
+T is "ece" which its length is 3.

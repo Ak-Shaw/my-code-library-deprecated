@@ -1,0 +1,31 @@
+Problem Description
+Convert a given singly linked list to a doubly linked circular list. 
+A doubly linked list is defined as a linked list which stores both previous and next node of the linked list. 
+A doubly linked circular list is defined as a doubly linked list in which the last node’s next points to the first node and the first node’s previous points to the last node.
+
+Input format
+First-line contains N, the number of elements in the linked list.
+The next line contains N space-separated integers, elements of the linked list.
+
+Output format
+Print N lines, each line should contain 3 space-separated integers - Value of previous node value of current node and value of the next node.
+
+Sample Input 1
+5
+1 2 3 4 5
+
+Sample Output 1
+5 1 2
+1 2 3
+2 3 4
+3 4 5
+4 5 1
+
+Explanation 1
+Refer to the problem description.
+
+Constraints
+0 <= Number of nodes <= 105
+-109 <= ListNode.val <= 109
+
+

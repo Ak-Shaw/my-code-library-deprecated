@@ -38,34 +38,30 @@ class Solution {
         return requiredHead;
     }
 
-    public static ListNode[] reverse_linked_list(ListNode node) {
+    public static ListNode[] reverse_linked_list(ListNode head) {
 
         ListNode prev = null;
-        ListNode current = node;
-        ListNode next = null;
+        ListNode current = head;
+        ListNode next;
 
-        ListNode last = null;
-        boolean lastNodeStored = false;
+        ListNode last = head;
+
         while (current != null) {
 
             next = current.next;
             current.next = prev;
-
-            if (!lastNodeStored) {
-                last = current;
-                lastNodeStored = true;
-            }
-
             prev = current;
             current = next;
         }
-        ListNode head = prev;
+
+        head = prev;
 
         ListNode[] result = {head, last};
 
         return result;
 
     }
+
 
 
     public static ListNode[] split_list(ListNode head, int i) {
@@ -106,11 +102,11 @@ class Solution {
 
     }
 
-    public static ListNode[] append_reversed_list_to_result
-            (ListNode headOfListBuiltSoFar,
-             ListNode tailOfListBuiltSoFar,
-             ListNode newReversalHead,
-             ListNode newReversalTail) {
+    public static ListNode[] append_reversed_list_to_result(
+	    	ListNode headOfListBuiltSoFar, 
+	    	ListNode tailOfListBuiltSoFar, 
+	    	ListNode newReversalHead, 
+	    	ListNode newReversalTail) {
 
         ListNode[] nullResult = {null, null};
 

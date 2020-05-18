@@ -1,0 +1,36 @@
+Check if the given linked list is a palindrome. 
+
+A linked list is said to be palindrome if,
+the value of the first and last node is same and
+that of second and second to last is same and so on.
+
+Constraints
+1 <= N <= 10^5
+|A[i]| <= 10^9
+
+==========
+Example 1
+==========
+Input:
+5
+1 2 2 2 1
+
+Output:
+Yes
+
+Explanation:
+1->2->2->2->1 is a palindrome
+
+==========
+Example 2
+==========
+Input:
+3
+3 1 1
+
+Output:
+No
+
+Explanation:
+3->1->1 is not a palindrome as 3 != 1
+
