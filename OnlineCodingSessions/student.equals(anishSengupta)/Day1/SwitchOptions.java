@@ -6,9 +6,9 @@ public class SwitchOptions {
 		
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print(	"Press 1 for One\n"+
-							"Press 2 for Two\n"+
-							"Press 3 for Three\n"+
+		System.out.print(	"Press 1 for One\n" + 
+							"Press 2 for Two\n" + 
+							"Press 3 for Three\n" + 
 							"\nChoice : ");
 
 		int c = sc.nextInt();
