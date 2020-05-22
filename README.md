@@ -8,5 +8,3 @@ Anyone can feel free to have a peek.
 
 This repo basically contains source codes to basic algorithms serving the foundations of coding, solutions to quite some problem statements and also my 
 reusable code libraries. 
-
-[Note: Whenever I update this repo, I'll add a timestamp almost identical to the one shown in `git log`.]
