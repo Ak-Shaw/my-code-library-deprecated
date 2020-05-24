@@ -1,0 +1,23 @@
+Problem Description
+You are given two numbers a and b. You have to find the remainder when a is divided by b using recursion. If remainder is not possible then return -1.
+
+Note: You cannot use the Modulo (%) operator.
+
+Input format
+Two space separated integers a and b
+
+Output format
+The remainder when a is divided by b. If remainder is not possible, then -1.
+
+Constraints
+a, b >= 0
+
+Sample Input 1
+10 3
+
+Sample Output 1
+1
+
+Explanation 1
+When 10 is divided by 3, the remainder is 1.
+
