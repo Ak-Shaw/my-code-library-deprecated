@@ -1,0 +1,52 @@
+Problem Pseudocode
+
+
+void findKthPermutation(List v, k, result) {
+
+  if (v is Empty) 
+
+     return
+
+
+   n = v.size()
+
+   // count is number of permutations starting with first character
+
+   count = factorial(n - 1)
+
+   selected = (k - 1) / count
+
+   append(v(selected)) to result
+
+   v.remove(selected)
+
+​
+
+   k = k - (count * selected);
+
+   findKthPermutation(v, k, result)
+
+ }
+
+
+ String getPermutation(n, k) {
+
+   List<Character> v 
+
+   char c = 'A'
+
+   for (i = 1 to n) 
+
+     v.add(c)
+
+     c++
+
+   
+
+   result = new String
+
+   findKthPermutation(v, k, result)
+
+   return result
+
+}

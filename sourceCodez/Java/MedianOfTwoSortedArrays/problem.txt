@@ -1,0 +1,18 @@
+There are two sorted arrays nums1 and nums2 of size m and n respectively.
+There are Q queries in each query you are given size1 and size2 and for each query you have to find the median of the sorted array having exactly size1 elements of nums1 and size2 elements of nums2.
+
+=========
+Example 1
+=========
+Input
+5
+1 3 5 7 9
+4
+2 4 6 8
+2
+5 4
+1 1
+
+Output
+5.0
+1.5

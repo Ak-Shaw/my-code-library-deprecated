@@ -1,6 +1,8 @@
 public class Song {
 
     private String title;
+
+    // Song duration in seconds.
     private double duration;
 
     public Song(String title, double duration) {
@@ -22,5 +24,9 @@ public class Song {
 
     public void setDuration(double duration) {
         this.duration = duration;
+    }
+
+    public String toString() {
+        return "Song Title: " + title + ", Duration: " + duration + " s";
     }
 }

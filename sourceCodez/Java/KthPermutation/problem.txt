@@ -1,0 +1,69 @@
+Problem Description
+Write a program that will output the kth smallest permutation of an alphabet sequence of length N in English uppercase alphabets.
+
+Given: Uppercase alphabets of length N = 1 is A, length N = 2 is AB , length N = 3 is ABC and so on.
+
+All permutations of the above sequence with length 3 are (in order):
+
+ABC
+
+ACB
+
+BAC
+
+BCA
+
+CAB
+
+CBA
+
+Input format
+First line contains two integers representing the value of N and K, where N is the length of the alphabet sequence and the Kth permutation respectively.
+
+Output format
+Print a single string in capital letters representing the kth permutation of the Alphabets.
+
+Constraints
+1 <= N <= 18
+
+1 <= K <= X, Where X is the value of N factorial.
+
+Sample Input 1
+4 8
+
+Sample Output 1
+BADC
+
+Explanation 1
+The permutation of the alphabets are:
+
+1.ABCD
+
+2.ABDC
+
+3.ACBD
+
+4.ACDB
+
+5.ADBC
+
+6.ADCB
+
+7.BACD
+
+8.BADC
+
+Sample Input 2
+2 2
+
+Sample Output 2
+BA
+
+Explanation 2
+The permutation of the alphabets are:
+
+1.AB
+
+2.BA
+
+

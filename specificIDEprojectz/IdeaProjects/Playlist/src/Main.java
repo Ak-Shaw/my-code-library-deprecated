@@ -23,5 +23,41 @@ from the playlist [hint: listIterator.remove()]
 
  */
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("No. of albums: ");
+        int n = sc.nextInt();
+        ArrayList<Album> albums = new ArrayList<>(n);
+
+        for (int i = 0; i < n; i++) {
+
+            System.out.print("Name for Album " + (i + 1) +": ");
+            String albumName = sc.nextLine();
+            Album album = new Album(albumName);
+            System.out.print("No. of songs for album " + albumName + ": ");
+            int numberOfSongs = sc.nextInt();
+
+            for (int j = 0; j < numberOfSongs; j++) {
+
+                System.out.print("Song " + (j + 1) + "title: ");
+                String songTitle = sc.nextLine();
+                System.out.print("Duration: ");
+                double duration = sc.nextDouble();
+
+                Song song = new Song(songTitle, duration);
+                album.addSong(song);
+            }
+
+            albums.add(album);
+        }
+
+
+    }
 }

@@ -1,0 +1,29 @@
+Problem Pseudocode
+
+
+generateParenthesis(N):
+
+        ans = []
+
+        backtrack("", 0, 0, N, ans)
+
+        return ans        
+
+        
+
+backtrack(S, left, right, N, ans):
+
+            if len(S) == 2 * N:
+
+                ans.append(S)
+
+                return
+
+            if left < N:
+
+                backtrack(S+'(', left+1, right, N, ans)
+
+            if right < left:
+
+                backtrack(S+')', left, right+1, N, ans)
+

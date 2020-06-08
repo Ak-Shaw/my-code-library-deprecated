@@ -1,0 +1,44 @@
+Problem Pseudocode
+
+
+connect(root) {
+
+        Queue q
+
+        q.add(root)
+
+        q.add(null)
+
+       
+
+        while (!q.isEmpty()) {
+
+                Node p = q.front(); 
+
+                q.remove(); 
+
+                if (p != null) {
+
+                        p.nextRight = q.front(); 
+
+
+                        if (p.left != null)
+
+                                q.add(p.left);  
+
+
+                        if (p.right != null) 
+
+                                q.add(p.right); 
+
+                }
+
+                else if (!q.isEmpty()) {
+
+                        q.add(null);
+
+                }
+
+         }
+
+}

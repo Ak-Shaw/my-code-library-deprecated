@@ -1,0 +1,23 @@
+Given a positive integer, print the next smallest and the next largest number thathave the same number of 1 bits in their binary representation.
+
+Constraints:
+0< n <1e16
+
+Input Format:
+First and only line will contain a number n.
+
+Output Format:
+In first line print the next greater number and in second line print the next smaller number.If there is no such number that satisfies the greater or smaller condition print then print "No Number" in its respective line.
+
+=========
+Example 1
+=========
+
+Input:
+
+4
+
+Output:
+
+8
+2

@@ -1,0 +1,24 @@
+Write a function to determine the number of bits you would need to flip to convert integer A to integer B
+
+Input Format-
+A single line that contains two space seperated integers A and B.
+
+Output Format-
+A single line that contains an integer which represents the number of bits needed to flip to convert integer A to integer B.
+
+Constraints-
+0 <= A,B <= 10^18
+
+=========
+Example 1
+=========
+Input:
+29 15
+
+Output:
+2
+
+Explanation: 
+Binary of 29 is 11101
+Binary of 15 is 01111
+So 2 bits needs to be flipped. 

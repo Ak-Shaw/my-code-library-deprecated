@@ -1,0 +1,14 @@
+Bit Manipulation is needed.
+
+Write down a couple of examples and visualize what cases need the flips
+
+Can we use XOR to figure out a simple logic that can count the number of flips needed?
+
+CountNumBitsToFlip (A, B) {
+
+Calculate the XOR of A and B. This will only have set bits where A and B differ.
+
+Count the number of 1 bits in this XORed result.
+
+This is the required number. Return this.
+}

@@ -1,0 +1,79 @@
+Problem Pseudocode
+
+
+List<List<String>> partition(String s) {
+
+    List<List<String>> partitions 
+
+    partition(s, partitions)
+
+    return partitions
+
+}
+
+
+// Generates all palindromic partitions of 's' and stores the result in 'v'
+
+void partition(String s, List<List<String>> v) {
+
+    List<String> temp
+
+    // calling addString method it adds all the palindromic partitions to v 
+
+    v = addStrings(v, s, temp, 0)
+
+}
+
+ 
+
+List<List<String>> addStrings(List<List<String>> v, String s, List<String> temp, int index) { 
+
+    int len = s.length()
+
+    String str = ""
+
+    List<String> current   // Initialize to current temp
+
+          
+
+    if (index == 0) 
+
+        temp.clear()
+
+          
+
+    // Iterate over the string 
+
+    for (i = index to len) {
+
+        str = str + s.charAt(i)
+
+        // check whether the substring is palindrome or not 
+
+        if (isPalindrome(str)) {
+
+            // if palindrome add it to temp list 
+
+            temp.add(str)
+
+            if (i + 1 < len) 
+
+                v = addStrings(v,s,temp,i+1)
+
+            else
+
+                // if end of the string is reached add temp to v 
+
+                v.add(temp)
+
+            // temp is reinitialized with the current i. 
+
+            temp = new ArrayList<String>(current)
+
+        }
+
+    }         
+
+    return v; 
+
+}

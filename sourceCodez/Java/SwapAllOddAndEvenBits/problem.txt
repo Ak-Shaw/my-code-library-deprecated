@@ -1,0 +1,24 @@
+Given an unsigned integer N, swap all odd bits with even bits.Every even position bit is swapped with adjacent bit on right side and every odd position bit is swapped with adjacent on left side.
+
+Input Format -
+A single line contains an integer representing the value of N.
+
+Constraints-
+0 <= N <= 2147483647
+
+Output Format -
+A single line contains an integer representing the converted value.
+
+=========
+Example 1
+=========
+Input -
+22
+
+
+Output -
+41
+
+
+Explanation-
+The given number is 22 (00010110), it should be converted to 43 (00101001).

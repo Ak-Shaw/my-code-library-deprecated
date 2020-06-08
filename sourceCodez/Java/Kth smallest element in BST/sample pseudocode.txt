@@ -1,0 +1,23 @@
+int kthSmallest(TreeNode root, int k) {
+
+   Stack<TreeNode> stack
+
+   while (true) {
+
+      while (root is not null) {
+
+          stack.push(root)
+
+          root = root.left
+
+    }
+
+    root = stack.pop()
+
+    if (--k == 0) 
+
+        return root.val
+
+    root = root.right
+
+}

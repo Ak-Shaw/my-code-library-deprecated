@@ -44,7 +44,7 @@ class Solution {
         ListNode current = head;
         ListNode next;
 
-        ListNode last = head;
+        ListNode tail = head;
 
         while (current != null) {
 
@@ -56,7 +56,7 @@ class Solution {
 
         head = prev;
 
-        ListNode[] result = {head, last};
+        ListNode[] result = {head, tail};
 
         return result;
 

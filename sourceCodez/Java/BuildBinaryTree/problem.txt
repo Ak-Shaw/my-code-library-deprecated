@@ -1,0 +1,30 @@
+Problem Description
+Given preorder and inorder traversal of a tree, construct the binary tree.
+
+Note: You may assume that duplicates do not exist in the tree.
+
+Input format
+First line contains N, the number of elements in the tree.
+
+Next line contains N space separated integers, denoting preorder.
+
+Next line contains N space separated integers, denoting inorder.
+
+Output format
+Print two lines by traversing the constructed binary tree.
+
+First line should contain N space separated integers, denoting preorder.
+
+Second line should contain N space separated integers, denoting inorder.
+
+Sample Input 1
+6
+1 2 4 5 3 6
+5 4 2 1 3 6
+
+Sample Output 1
+1 2 4 5 3 6
+5 4 2 1 3 6
+
+Explanation 1
+The output writes out the preorder and inorder sequence by traversing the binary tree constructed, so it should be the same as the output.

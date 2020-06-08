@@ -1,0 +1,35 @@
+Given an array(0-based indexed) of integers nums of length n sorted in ascending order, 
+and you are given Q number of queries and in each query you will have to
+find the starting and ending position(0-based indexed) of a given target value.
+
+Your algorithm's runtime complexity must be in the order of O(log n).
+
+If the target is not found in the array, return [-1, -1].
+
+Input format-
+First line has an integer denoting the size of array(n)
+next line contain n space seperated integers denoting the array(nums).
+next line contains an integer representing the value of Q.
+In the next Q lines each line will contain an integer K(target value).
+
+Constraints -
+1 <= n <= 100000
+-1000000000 <= nums[i] <= 1000000000 
+1 <= Q <= 50000
+-1000000000 <= target <= 1000000000 
+
+=========
+Example 1
+=========
+Input
+5
+1 2 2 3 4
+3
+1
+2
+5
+
+Output
+0 0
+1 2
+-1 -1
