@@ -1,0 +1,49 @@
+Problem Description
+You are given an array of N numbers. Take subarrays of increasing size (subarray always starts from the first element), starting from size 1 to size N from this input array and for each subarray, find the median and print it on a separate line.
+
+The median is defined as the middle element of an array, sorted in ascending order.
+
+For an array with an odd number of elements, the median is the middle element
+
+Example 1 - For the array 1 2 3 4 5, the median is 3
+
+For an array with an even number of elements, the median is defined as (Element at index floor(n/2) + Element at index (floor(n/2)+1))/2
+
+Example 2 - For the array 1 2 4 5, the median is (2+4)/2 = 3
+
+Input format
+First line will contain an integer N denoting the size of the array
+
+Next line will contain N space separated integers
+
+Output format
+Print median for every subarray of size 1 <= i <= N on a new line.
+
+Constraints
+1 <= N <= 200000
+
+0 <= Array values <= 1e9
+
+Sample Input 1
+
+5
+1 2 1 2 3
+
+Sample Output 1
+
+1
+1
+1
+1
+2
+
+Explanation 1
+First subarray to consider is [1], which has a median of 1
+
+Next subarray to consider is [1 2], which has a median of 1 (since we are expecting integer output, otherwise it would’ve been 1.5)
+
+Next subarray to consider is [1 2 1], which has a median of 1, when the subarray is sorted
+
+Next subarray to consider is [1 2 1 2], which has a median of 1, when the subarray is sorted
+
+Next subarray to consider is [1 2 1 2 3], which has a median of 2, when the subarray is sorted

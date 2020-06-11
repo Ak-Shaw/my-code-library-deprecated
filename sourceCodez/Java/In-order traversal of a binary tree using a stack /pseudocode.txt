@@ -1,0 +1,32 @@
+Problem Pseudocode
+
+
+List <int> inorderTraversal(TreeNode root) {
+
+        res = new List()
+
+        Stack <TreeNode> stack
+
+        TreeNode curr = root
+
+        while (curr != null or stack is not Empty) {
+
+            while (curr != null) {
+
+                stack.push(curr)
+
+                curr = curr.left
+
+            }
+
+            curr = stack.pop
+
+            res.add(curr.val)
+
+            curr = curr.right
+
+        }
+
+        return res
+
+}

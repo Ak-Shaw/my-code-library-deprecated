@@ -1,0 +1,31 @@
+Problem Pseudocode
+
+
+void nextGreaterElement(int[] arr) {
+
+    new Stack s
+
+    for (i = 0 to len(arr)) {
+
+        while (!s.isEmpty() && arr[i] > s.peek()) {
+
+            int popped = s.pop()
+
+            print(popped + " ? " + arr[i])
+
+        }
+
+        s.push(arr[i]);
+
+    }
+
+
+    while (!s.isEmpty()) {
+
+        int popped = s.pop()
+
+        print(popped + " ? " + -1)
+
+    }
+
+}

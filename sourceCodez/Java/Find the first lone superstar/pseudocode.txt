@@ -1,0 +1,59 @@
+Problem Pseudocode
+
+
+class Pair {
+
+    int freq;
+
+    int index;
+
+}
+
+
+void firstNonRepeating(int arr[], int n) { 
+
+        Map<Integer, Pair> m
+
+        for (i = 0 to n) { 
+
+            if (m.containsKey(arr[i]))
+
+                Pair p = m.get(arr[i])
+
+                p.freq += 1
+
+                m.put(arr[i], p) 
+
+            else 
+
+                Pair p = new Pair()
+
+                p.index = i
+
+                p.freq = 1
+
+                m.put(arr[i], p)    
+
+        }
+
+        
+
+        int min_index = Integer.MAX_VALUE
+
+        int first_unique = -1
+
+        for (int key : m.keySet()) {
+
+            if (m.get(key).freq == 1 && m.get(key).index < min_index) {
+
+                min_index =  m.get(key).index 
+
+                first_unique = key
+
+            }
+
+        }
+
+        print(first_unique)
+
+}

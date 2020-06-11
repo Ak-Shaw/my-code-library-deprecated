@@ -1,0 +1,45 @@
+Problem Description
+You are given N ropes of varying lengths. The cost of connecting any two ropes is equal to the sum of their lengths. Your goal is to connect all N ropes together to form a single rope and minimize the cost in the process.
+
+Input format
+First line will contain the value N, denoting the number of ropes
+
+Second line will contain N space separated integers
+
+Output format
+Print the minimum cost on a single line
+
+Constraints
+1 <= N <= 200000
+
+1<= Length of each Rope <= 10000000
+
+Sample Input 1
+
+3
+1 2 3
+
+Sample Output 1
+
+9
+
+Explanation 1
+First, we connect ropes of length 1 and 2, leading to a new rope of length 3 and which costs 1+2 = 3. Next we connect ropes of length 3 and 3, leading to a single rope, costing 3+3 = 6. The total cost will be 3+6 = 9, which is the minimum possible cost.
+
+Sample Input 2
+
+4
+3 3 6 10
+
+Sample Output 2
+
+40
+
+Explanation 2
+First, we connect ropes of length 3 and 3, leading to a new rope of length 6 and which costs 3+3 = 6.
+
+Next we connect ropes of length 6 and 6, leading to a new rope of length 12, costing 6+6 = 12.
+
+Finally, we connect the remaining two ropes of length 10 and 12, leading to a single rope and costing 10+12 = 22.
+
+The total cost will be 6+12+22 = 40, which is the minimum possible cost.

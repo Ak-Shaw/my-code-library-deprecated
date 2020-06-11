@@ -1,0 +1,34 @@
+Problem Pseudocode
+
+
+int minCost(int arr[], int n) {
+
+        new PriorityQueue<Integer> pq 
+
+  
+
+        for (i = 0 to n) :
+
+            pq.add(arr[i])
+
+     
+
+        res = 0
+
+        while (pq.size() > 1) {
+
+            first = pq.poll()
+
+            second = pq.poll()
+
+  
+
+            res += first + second
+
+            pq.add(first + second)
+
+        }
+
+        return res
+
+}

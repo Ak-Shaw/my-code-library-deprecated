@@ -1,0 +1,39 @@
+Problem Pseudocode
+
+
+ListNode mergeKLists(ListNode[] lists) {
+
+new PriorityQueue<Node> pq
+
+
+for (i=0 to k) 
+
+    pq.add(lists[i])
+
+
+head = null, last = null
+
+while (!pq.isEmpty()) 
+
+    Node min = pq.poll()
+
+
+    if (head == null) 
+
+        head = last = min
+
+    else 
+
+        last.next = min
+
+        last = min
+
+
+    if (min.next != null)
+
+        pq.add(min.next)
+
+
+return head
+
+}
