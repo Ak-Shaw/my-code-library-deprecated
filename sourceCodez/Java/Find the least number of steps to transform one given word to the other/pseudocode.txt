@@ -1,0 +1,54 @@
+Problem Pseudocode
+
+
+ladderLength(beginWord, endWord, wordList):
+
+  wordDict = set(wordList)
+
+  if endWord not in wordDict 
+
+    return 0
+
+  l = len(beginWord)
+
+  s1 = {beginWord}
+
+  s2 = {endWord}
+
+  wordDict.remove(endWord)
+
+  step = 0
+
+  while len(s1) > 0 and len(s2) > 0:
+
+    step += 1
+
+    if len(s1) > len(s2):
+
+      swap(s1,s2)
+
+    s = set()
+
+    for w in s1:
+
+      new_words = []
+
+      for i in 0..l:
+
+        for t in a..z:
+
+  		    new_words.add(w[:i] + t + w[i+1:])
+
+      for new_word in new_words:
+
+      	if new_word in s2: return step + 1
+
+      	if new_word not in wordDict: continue
+
+      	wordDict.remove(new_word)                        
+
+      	s.add(new_word)
+
+		  s1 = s
+
+  return 0

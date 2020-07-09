@@ -1,0 +1,48 @@
+Problem Pseudocode
+
+
+DetectCycle(n,edges) :
+
+	adjacencyList = []
+
+	for u,v in edges :
+
+		adjacencyList[u].append(v)
+
+	visited = [False for i = 1 to n]
+
+	for i = 1 to n :
+
+		if not visited[i] :
+
+	foundCycle = findCycleByDFS(i,adjacencyList,visited,-1)
+
+	if foundCycle :
+
+		return True
+
+return False
+
+	
+
+findCycleByDFS(start,adjacencyList,visited,parent) :
+
+	visited[start] = True
+
+	for connectedNode in adjacencyList[start] :
+
+		if not visited[connectedNode] :
+
+			foundCycle = dfs(connectedNode,adjacencyList,visited,start)
+
+			if foundCycle :
+
+				return True
+
+		else if visited[connectedNode] and connectedNode != parent :
+
+			return True
+
+	return False
+
+**```**

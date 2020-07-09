@@ -1,0 +1,35 @@
+getMinimumCost(edges,n):
+
+	// make sure you calculate the total cost of the each path by multiplying the length by the cost of paving one unit.
+
+	Adj = getAdjList(edges) // create a graph 0 based 
+
+	Bool visited[n] = {false}
+
+	totalCost = 0
+
+	priorityQueue PQ
+
+	Int cost[n] = {INF}
+
+	PQ.push({0,0})
+
+	cost[0]=0
+
+	while not PQ.empty():
+
+		u = PQ.pop()
+
+		visited[u] = true
+
+		totalCost += cost[u]
+
+		for v,c in adj[u]:
+
+			If not visited[v] and cost[v] > c:
+
+cost[v] = c
+
+PQ.add({c,v})
+
+return totalCost 	

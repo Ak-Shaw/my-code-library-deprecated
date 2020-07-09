@@ -13,11 +13,17 @@ public class CharacterFrequency {
 
 		System.out.println("Charcters and their frequencies are as follows:\n");
 
-		for (int i = 0; i < 256; i++) {
+		// for (int i = 0; i < 256; i++) {
 
-			if (freqMap.containsKey((char)i)) {
-				System.out.println((char)i + " => " + freqMap.get((char)i));
-			}
+		// 	if (freqMap.containsKey((char)i)) {
+		// 		System.out.println((char)i + " => " + freqMap.get((char)i));
+		// 	}
+		// }
+
+		for (char character : freqMap.keySet()) {
+			
+			System.out.println(character + " => " + freqMap.get(character));
+			
 		}
 	}
 

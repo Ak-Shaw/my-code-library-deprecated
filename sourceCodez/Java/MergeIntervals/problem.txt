@@ -1,0 +1,49 @@
+Problem Description
+Given a collection of intervals, merge all overlapping intervals.
+
+Note: The merged intervals should be printed in sorted order (using interval start as the key)
+
+Input format
+First line contains N, the number of intervals
+
+Next N lines contain 2 space separated integers A and B, which represent the start and end of an interval
+
+Output format
+For the X merged intervals, print each interval (the start and end being space separated) on a separate line
+
+Constraints
+1 <= N <= 50000
+
+0 <= A, B <= 1e9
+
+B >= A
+
+Sample Input 1
+
+4
+1 3
+2 6
+8 10
+15 18
+
+Sample Output 1
+
+1 6
+8 10
+15 18
+
+Explanation 1
+Since intervals [1 3] and [2 6] overlap, merge them into [1 6]
+
+Sample Input 2
+
+2
+1 4
+4 5
+
+Sample Output 2
+
+1 5
+
+Explanation 2
+Intervals [1 4] and [4 5] overlap and get merged into [1 5]

@@ -1,0 +1,60 @@
+Problem Description
+Welcome to Lilliput, the land of tiny people. Here, the person with smaller height is considered more intelligent.
+
+You are given an array of N integers indicating all the Lilliputians standing in a straight line in positions 0 to n-1. The values of the array indicate the Lilliputian heights.
+
+You will be asked to do two types of actions - update of the form [u x h] and query of the form [q x y]. In the update action [u x h], you have to update the height of the Lilliputian at index x to value h. In the query action [q x y], you have to output the most intelligent Lilliputian’s height in the index range between x to y (both inclusive).
+
+Input format
+First line will have N, representing the number of Lilliputians in Lilliput.
+
+Second line will have N space separated integers denoting the height of each Lilliputian standing in the line.
+
+Third line will have a number A denoting the number of actions.
+
+Next A lines will have one of the two actions, u or q.
+
+For the action of type u (update), the line will have u followed by two space separated integers, x and h, where x indicates the index in the array and h indicates the new height of the Lilliputian at that index.
+
+For the action of type q (query), the line will have q followed by two space separated integers, x and y, where x indicates the start index in the array and y indicates the end index in the array, between which (both inclusive) the most intelligent Lilliputian’s height has to be found.
+
+Output format
+For each query action, output on a new line, the height of the most intelligent Lilliputian in the given range.
+
+Constraints
+1 <= N <= 50000
+
+0 <= height[i], h <= 1e9
+
+1 <= A <= 50000
+
+0 <= x <= y <= n-1
+
+Sample Input 1
+
+5
+2 3 5 1 9
+4
+q 0 2
+u 1 0
+q 1 4
+q 3 3
+
+Sample Output 1
+
+2
+0
+1
+
+Explanation 1
+We have 5 Lilliputians with initial heights [2 3 5 1 9]
+
+We have 4 Actions.
+
+First action is to query the smallest value (i.e. most intelligent) between indices 0 and 2, or values [2 3 5], the answer to which is 2
+
+Second action is to update the value at index 1 to 0. So, the array becomes [2 0 5 1 9]
+
+Third action is to query the smallest value (i.e. most intelligent) between indices 1 and 4, or values [0 5 1 9], the answer to which is 0
+
+Fourth action is to query the smallest value (i.e. most intelligent) between indices 3 and 3, or value [1], the answer to which is 1, since there is only one value.

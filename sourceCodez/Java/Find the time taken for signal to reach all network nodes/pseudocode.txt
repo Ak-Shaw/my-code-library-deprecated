@@ -1,0 +1,31 @@
+networkDelayTime(n,edges,src):
+
+        f = {}
+
+        for a, b, p in edges:
+
+            f[a][b] = p
+
+        heap //a min priority queue
+
+        heap.add({0,src})
+
+        Visited = []
+
+        maxDelay = 0
+
+        while heap:
+
+            delay, cur = heap.pop()
+
+            Visited[cur] = true
+
+            maxDelay = delay
+
+            n--
+
+            for j in f[cur]:
+
+                    heap.add(delay + f[cur][j], j))
+
+        return n == 0? maxDelay: -1

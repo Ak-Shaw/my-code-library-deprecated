@@ -1,0 +1,38 @@
+maximumXor(nums) :
+
+	T = Trie()
+
+	for num in nums :
+
+		T.add(Binary(num)) # add 30 bit binary form of the number
+
+	Ans = 0
+
+for num in nums :
+
+		X = find(T,num)
+
+		Ans = max(Ans,num ^ X)
+
+	Return Ans
+
+
+find(T,num) :
+
+	Val = str()
+
+	For bit in num :
+
+If inverse(bit) in T.children :
+
+	T = T.children[inverse(bit)]
+
+	Val += inverse(bit)
+
+Else :
+
+	T = T.children[bit]
+
+	Val += bit
+
+Return Decimal(Val) # convert the number to decimal and return it
