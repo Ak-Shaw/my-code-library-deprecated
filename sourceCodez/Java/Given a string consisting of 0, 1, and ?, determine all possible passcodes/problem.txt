@@ -1,0 +1,29 @@
+Problem Description
+You need to enter a passcode consisting of 0 and 1 in order to access a computer.
+
+However you have forgotten some digits of the passcode! Forgotten digits are replaced with ?.
+
+Given a string consisting of 0, 1, and ?, determine all possible passcodes.
+
+Print them on separate lines in ascending order (i.e. smallest number on first line, largest last).
+
+Input
+
+Input format
+Line 1: A string consisting of 0, 1, and ?.
+
+Output format
+On separate lines, all possible passcodes, sorted in ascending numerical order.
+
+Sample Input 1
+?
+
+Sample Output 1
+0
+1
+
+Explanation 1
+With one digit password there are two possibilities 0 and 1
+
+Constraints
+The input string is at most 5 characters long.

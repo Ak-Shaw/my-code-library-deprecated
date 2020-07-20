@@ -1,0 +1,47 @@
+Problem Description
+Given a string, we want to cut it into pieces such that each piece is a palindrome. Write a function to return the number of cuts needed to break the string into the minimum possible number of palindromes.
+
+Note: A single letter is also considered a palindrome.
+
+Note: The function needs to return the number of cuts, not the minimum number of palindromes
+
+Input format
+First line contains N, the length of the string S.
+
+Second line contains the string S of length N characters, consisting of all lowercase alphabets.
+
+Output format
+Print the number of cuts needed.
+
+Constraints
+1 <= N <= 2000
+
+Sample Input 1
+8
+aabbaacd
+
+Sample Output 1
+2
+
+Explanation 1
+We can make two cuts to get the minimum number of palindrome strings - aabbaa|c|d
+
+Sample Input 2
+4
+abcd
+
+Sample Output 2
+3
+
+Explanation 2
+Each character will become a separate palindrome since there is no other longer palindrome possible. We need to make 3 cuts to separate the string into palindromes - a|b|c|d
+
+Sample Input 3
+3
+aaa
+
+Sample Output 3
+0
+
+Explanation 3
+The string is a palindrome in itself. We can have 0 cuts to end up with a single palindrome which is the minimum possible.
