@@ -110,6 +110,8 @@ public class LinkedList2 {
 
 		ListNode current = getKthNode(head, k - 1);
 
+		// Node at (k - 1)th position is getting linked 
+		// with node at (k + 1)th position.
 		current.next = current.next.next;
 
 		return head;

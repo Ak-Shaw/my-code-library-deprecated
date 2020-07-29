@@ -1,0 +1,27 @@
+Problem Description
+Given an array P,which consists of the power measurement of N monsters. For each monster i, it is assigned some power denoted by P[i]. You have to put M-1 walls between these monsters and divide them into exactly M different contiguous segments.
+
+The power of each segment is the sum of power of all the monsters in that segment. Formally, you have to break the array into M non-empty contiguous subarrays such that the maximum of the sum of each of the M subarrays is minimum. You need to return the minimum possible maximum of the sum of the subarrays.
+
+Input format
+First line consists of two space separated integers N and M.
+
+The second line consists of N integers denoting the power of the monsters i.e. P[i].
+
+Output format
+A single integer denoting the minimum of the maximum of power of all possible segment arrangements..
+
+Sample Input 1
+5 2
+7 2 5 10 8
+
+Sample Output 1
+18
+
+Explanation 1
+The best way is to split it into [7,2,5] and [10,8] where the largest sum among the two subarrays is only 18. There exists other ways of splitting the array such as [7] and [2,5,10,8] or [7,2] and [5,10,8] for which the largest sum is 25 and 23 respectively. We can see that the minimum of all these values is 18, hence 18 is the answer.
+
+Constraints
+1 <= N <= 100000
+1 <= M <= N
+-100000000 <= P[i] <= 100000000

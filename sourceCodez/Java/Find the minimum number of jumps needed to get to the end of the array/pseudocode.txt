@@ -1,0 +1,36 @@
+minimumJumps(arr, n): 
+
+    destination = n - 1
+
+    maxReach = 0
+
+    currReach = 0
+
+    jumps = 0
+
+    for i,num in enumerate(arr) :
+
+        if i > maxReach :
+
+            break
+
+        if i > currReach :
+
+            jumps += 1
+
+            currReach = maxReach
+
+        maxReach = max(maxReach,i + num)
+
+    if currReach >= destination :
+
+        return jumps
+
+    return -1
+
+
+
+**```**
+
+**Time Complexity**: O(N); where N is the number of steps.
+**Space Complexity**: O(1)

@@ -1,0 +1,25 @@
+Problem Description
+The majority element in an array of size N is the element that appears more than floor(N/2) times. Given a non-empty array which is guaranteed to have a majority element in it, find it.
+
+Input format
+First line contains an integer representing the value of N.
+
+Second line contains N space separated numbers which are the input array elements.
+
+Output format
+Print the majority element. If there is no majority element, print -1.
+
+Constraints
+1 <= N <= 1000000
+
+1 <= A[i] <= 1000000
+
+Sample Input 1
+6
+1 2 1 2 1 1
+
+Sample Output 1
+1
+
+Explanation 1
+The frequency of 1 is more than half the size of the array. So, it is the majority element.

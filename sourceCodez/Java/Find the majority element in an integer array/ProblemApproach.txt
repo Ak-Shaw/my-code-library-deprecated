@@ -1,0 +1,5 @@
+Maintain a count of all unique numbers of an array.
+
+If the count of a number is more than half, return it.
+
+If can't find any such number, return -1.

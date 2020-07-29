@@ -1,0 +1,35 @@
+circularRace(n,gas,burn):
+
+    start = 0
+
+    while start < l :
+
+        currGas = 0
+
+        for j in range(n) :
+
+            currGas += gas[(start + j)%n] - burn[(start + j)%n]
+
+            if currGas < 0 :
+
+                start += j
+
+                break
+
+        if currGas >= 0 :
+
+            return start + 1
+
+        start += 1
+
+    return -1
+
+
+
+**```**
+
+**Time Complexity**: O(N); where N is the number of stations
+**Space Complexity**: O(1) 
+
+
+

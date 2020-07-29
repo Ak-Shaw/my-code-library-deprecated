@@ -1,0 +1,21 @@
+Brute Force: In this brute force approach we take all possible step combinations i.e. 1, 2, or 3 at every step. At every step, we are calling the function climbStairsclimbStairs for steps 1, 2 or 3, and return the sum of returned values of all three functions.
+climbStairs(i, n) = climbStairs(i + 1, n) + climbStairs(i + 2, n) + climbStairs(i + 3, n)
+
+where i defines the current step and n defines the destination step. Time complexity: O(3n). The size of the recursion tree will be 3n.
+
+As we can see this problem can be broken into subproblems, and it contains the optimal substructure property i.e. its optimal solution can be constructed efficiently from optimal solutions of its subproblems, we can use dynamic programming to solve this problem.
+One can reach ith step in one of the three ways:
+
+Taking a single step from (i?1)th step.
+
+Taking a step of 2 from (i?2)th step.
+
+Taking a step of 3 from (i?3)th step.
+
+So, the total number of ways to reach ith is equal to sum of ways of reaching (i?1)th step, ways of reaching (i?2)th step and ways of reaching (i?3)th step
+
+Let dp[i] denotes the number of ways to reach on ith step
+
+dp[i]=dp[i-1]+dp[i-2]+dp[i-3]
+
+If you check the nth number is only dependant on previous 3 values.

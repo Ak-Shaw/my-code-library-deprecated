@@ -1,0 +1,24 @@
+majorityElement(nums) :
+
+	count = defaultdict(lambda: 0)
+
+	for num in nums :
+
+		count[num] += 1
+
+	for num,occ in count.items() :
+
+		if occ > len(nums)/2 :
+
+			return True
+
+	return False
+
+
+**```**
+
+
+**Time Complexity**: O(N); where N is the number of numbers.
+**Space Complexity**: O(K) where  K is the number of unique numbers
+
+

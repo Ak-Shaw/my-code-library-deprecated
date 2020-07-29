@@ -133,10 +133,13 @@ public class LinkedList3 {
 		return current;
 	}
 
+	// Input should be a node other than Tail.
 	public static void deleteMiddleNode(ListNode node) {
 
+		// Copies the value of next node.
 		node.val = node.next.val;
 
+		// Linking current node with the node after the next node.
 		node.next = node.next.next;
 	}
 }

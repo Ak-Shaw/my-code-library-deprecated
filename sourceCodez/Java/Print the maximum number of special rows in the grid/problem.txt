@@ -1,0 +1,42 @@
+Problem Description
+There is a grid of size N X M with values 0 or 1 in each cell. You also have a Rectangular sheet of size 1 * K with values 1 in each cell.
+
+You can place the sheet above the grid and cover some cells.
+
+You have to place it in such a way that there are maximum special rows in the grid.
+
+A special row in the grid is a row that contains all ones in that particular row.
+
+Return the maximum number of special rows in the grid by placing the sheet.
+
+NOTE: The sheet can only be placed horizontally.
+
+Input format
+The first line contains 1 single integer the number of test cases.
+
+In each test case : The first line contains 3 space separated integers N, M and K.
+
+Next N Line contains M space separated integers the values of the matrix.
+
+Output format
+Print the maximum number of special rows in the grid by placing the sheet.
+
+Sample Input 1
+1
+4 4 3
+1 0 0 1
+1 1 1 1
+0 0 0 1
+0 1 1 1
+
+Sample Output 1
+2
+
+Explanation 1
+We can either place the sheet in the first row, third row or in the last row to get the maximum value of two special rows.
+
+Constraints
+1 <= T <= 100
+1 <= N,M <= 1000
+1 <= K <= M
+Sum of all values over all test cases is less than 5*10^5.

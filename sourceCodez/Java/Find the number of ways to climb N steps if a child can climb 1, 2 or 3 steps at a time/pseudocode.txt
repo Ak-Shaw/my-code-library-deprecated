@@ -1,0 +1,21 @@
+mod = 1000000007
+
+numberOfWays(int n)
+
+        if n == 1 || n == 2:
+
+return n
+
+        first = 1, second = 1, third = 2, current;
+
+        for i in 2 .. n
+
+            current = ((first%mod + second%mod)%mod + third%mod)%mod
+
+            first = second
+
+            second = third
+
+            third = current
+
+        return third

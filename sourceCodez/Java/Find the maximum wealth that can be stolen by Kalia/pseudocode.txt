@@ -1,0 +1,38 @@
+rob(nums):
+
+    if (nums.length == 0) return 0
+
+    memo // 1D array of size nums.length
+
+    memo[0] = 0
+
+    memo[1] = nums[0]
+
+    for i = 1 .. nums.length:
+
+        val = nums[i]
+
+        memo[i+1] = max(memo[i], memo[i-1] + val)
+
+    return memo[nums.length];
+
+
+We can notice that in the previous step we use only memo[i] and memo[i-1], so going just 2 steps back. We can hold them in 2 variables instead. This optimization is met in Fibonacci sequence creation and some other problems.
+
+rob(nums):
+
+    if (nums.length == 0) return 0
+
+    int prev1 = 0
+
+    int prev2 = 0
+
+    for num in nums:
+
+        tmp = prev1;
+
+        prev1 = max(prev2 + num, prev1)
+
+        prev2 = tmp
+
+    return prev1;

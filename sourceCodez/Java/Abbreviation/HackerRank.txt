@@ -1,0 +1,5 @@
+ProblemLink:
+https://www.hackerrank.com/challenges/abbr/problem
+
+Discuss:
+https://www.hackerrank.com/challenges/abbr/forum
