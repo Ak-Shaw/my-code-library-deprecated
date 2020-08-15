@@ -1,0 +1,44 @@
+Problem Description
+You are hired as a trader for a world-known 'Buy or Sell' finance company. Before you are allowed to trade on European Onions Exchange you have a task to analyze data for the previous day.
+
+Exchange rules are:
+
+Only onions are traded on exchange. Price of onion changes during the day, each new value of a price is called tick.
+
+You can buy onions for all money that you have on your account and sell all onions back later starting from the next tick. Only one buy-sell operation is allowed per day. If you buy onions you must sell them later. If price is not a divisor of the amount of money that you have then you receive a fractional number (balance / price) of onions.
+
+If you don't want to trade today you can skip and the amount of money on your account will not change.
+
+You know the initial amount of money on your account and have a list of onions price ticks during the day. You need to find the maximum amount of money that is possible to have your account by the end of the day.
+
+Input format
+Line 1: Balance Your initial balance
+
+Line 2: N Number of onion price ticks during the day
+
+Next N lines: Price onion price value
+
+Output format
+Line 1 : Maximum possible amount of money on account by the end of the day, rounded half-up to nearest integer
+
+Sample Input 1
+
+100.0
+5
+10.0
+20.0
+30.0
+40.0
+50.0
+
+Sample Output 1
+
+500
+
+Explanation 1
+You buy for 100 and set it at the end of the day. You have 500 by end of the day
+
+Constraints
+2 ≤ N ≤ 100
+
+0 < Balance

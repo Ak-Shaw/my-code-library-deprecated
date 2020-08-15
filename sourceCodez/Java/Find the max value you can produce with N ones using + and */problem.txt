@@ -1,0 +1,33 @@
+Problem Description
+Given N (number of ones), using the + and * operators, find the max value you can produce with the N ones
+
+Input format
+N
+
+Output format
+Max value that be made
+
+Sample Input 1
+2
+
+Sample Output 1
+2
+
+Explanation 1
+1+1 produces 2
+
+1*1 produces 1
+
+hence the max we can produce is 2
+
+Sample Input 2
+3
+
+Sample Output 2
+3
+
+Explanation 2
+1+1+1 is the max value we can produce
+
+Constraints
+1 <= N <= 100

@@ -1,0 +1,38 @@
+Problem Description
+You need to find the number of fish there will be at a year N, given the initial number NB of fish at year 0. To simplify things, there are no males and females: every fish gives birth to G fish per year.
+
+But be careful, because:
+
+Fish only give birth during the first R years of their lives
+
+Fish only live L years (initial fish are dead at year L)
+
+Input format
+N NB G L R
+
+Output format
+Number of fish in year N
+
+Sample Input 1
+
+1 2 1 4 2
+
+Sample Output 1
+
+4
+
+Explanation 1
+Initial 2 fish plus each of their babies(1 each) hence total of 4.
+
+Sample Input 2
+
+3 2 2 4 2
+
+Sample Output 2
+
+50
+
+Constraints
+0 < N,NB,G <= 10
+
+0 < R <= L <= 5
