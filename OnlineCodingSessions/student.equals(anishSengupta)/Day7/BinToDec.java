@@ -1,4 +1,4 @@
-// Binary to decimal convertion.
+// Binary to decimal conversion.
 
 import java.util.*;
 
