@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;ExceptionHandlingDemo/src/ExceptionEdureka/PassingExceptions.java&apos; to &apos;ParsingExceptions.java&apos;" description="Rename resource &apos;PassingExceptions.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ExceptionEdureka/PassingExceptions.java" name="ParsingExceptions.java" stamp="1579636580621" updateReferences="true"/>
-</session>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;AJAX_SEARCH/WebContent/TestSearch.jsp&apos;" deleteContents="false" description="Delete resource &apos;AJAX_SEARCH/WebContent/TestSearch.jsp&apos;" element1="/AJAX_SEARCH/WebContent/TestSearch.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1579066238441"/>
-</session>

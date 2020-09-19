@@ -1,10 +1,10 @@
 eclipse.preferences.version=1
+org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=
 org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
-org.eclipse.jdt.core.compiler.codegen.targetPlatform=12
-org.eclipse.jdt.core.compiler.compliance=12
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=14
+org.eclipse.jdt.core.compiler.compliance=14
 org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
 org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
 org.eclipse.jdt.core.compiler.release=enabled
-org.eclipse.jdt.core.compiler.source=12
-org.eclipse.jdt.core.userLibrary.HIBERNATE=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="C\:/HIBERNATE_JAR/antlr-2.7.6.jar"/>\r\n\t<archive path\="C\:/HIBERNATE_JAR/commons-collections-3.1.jar"/>\r\n\t<archive path\="C\:/HIBERNATE_JAR/dom4j-1.6.1.jar"/>\r\n\t<archive path\="C\:/HIBERNATE_JAR/hibernate3.jar"/>\r\n\t<archive path\="C\:/HIBERNATE_JAR/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>\r\n\t<archive path\="C\:/HIBERNATE_JAR/javassist-3.12.0.GA.jar"/>\r\n\t<archive path\="C\:/HIBERNATE_JAR/jta-1.1.jar"/>\r\n\t<archive path\="C\:/HIBERNATE_JAR/ojdbc14.jar"/>\r\n\t<archive path\="C\:/HIBERNATE_JAR/ojdbc14_g.jar"/>\r\n\t<archive path\="C\:/HIBERNATE_JAR/slf4j-api-1.6.1.jar"/>\r\n</userlibrary>\r\n
+org.eclipse.jdt.core.compiler.source=14

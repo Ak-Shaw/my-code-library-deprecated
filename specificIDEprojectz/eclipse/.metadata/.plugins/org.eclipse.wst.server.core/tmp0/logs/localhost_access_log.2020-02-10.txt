@@ -1,6 +1,0 @@
-127.0.0.1 - - [10/Feb/2020:02:07:36 +0530] "GET / HTTP/1.1" 404 1074
-0:0:0:0:0:0:0:1 - - [10/Feb/2020:02:07:38 +0530] "GET /AppletExample/HelloJava.html HTTP/1.1" 200 202
-127.0.0.1 - - [10/Feb/2020:12:02:23 +0530] "GET / HTTP/1.1" 404 1074
-0:0:0:0:0:0:0:1 - - [10/Feb/2020:12:02:27 +0530] "GET /InternetBankingProj/Customer.jsp HTTP/1.1" 200 1386
-0:0:0:0:0:0:0:1 - - [10/Feb/2020:12:05:24 +0530] "POST /InternetBankingProj/CustomerAddServe HTTP/1.1" 302 -
-0:0:0:0:0:0:0:1 - - [10/Feb/2020:12:05:24 +0530] "GET /InternetBankingProj/CustomerAddSuccess.jsp HTTP/1.1" 200 153
