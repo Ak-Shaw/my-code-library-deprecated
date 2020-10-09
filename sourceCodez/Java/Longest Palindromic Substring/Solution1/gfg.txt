@@ -1,0 +1,7 @@
+https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-1/
+
+https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-2/
+
+https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-3-2/
+
+https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-4/?ref=rp
