@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class StackUsingArray {
+public class QueueUsingArray {
 
-	private int[] stack;
+	private int[] queue;
 	private int currentSize;
 	private int maxSize;
 
-	StackUsingArray(int maxSize) {
-		stack = new int[maxSize];
+	QueueUsingArray(int maxSize) {
+		queue = new int[maxSize];
 		currentSize = 0;
 		this.maxSize = maxSize;
 	}
@@ -23,44 +23,47 @@ public class StackUsingArray {
 
 	public int peek() {
 
-		// If stack is empty.
+		// If queue is empty.
 		if (empty()) {
 			return Integer.MIN_VALUE;
 		}
 
-		// If stack is not empty, currentSize will
-		// hold position of the last element.
-		return stack[currentSize - 1];
+		return queue[0];
 	}
 
-	public int pop() {
+	public int dequeue() {
 
-		// If stack is empty.
+		// If queue is empty.
 		if (empty()) {
 			return Integer.MIN_VALUE;
+		}
+
+		int valueToBeReturned = queue[0];
+
+		for (int i = 0; i < currentSize - 1; i++) {
+
+			queue[i] = queue[i + 1];
 		}
 
 		currentSize--;
 
-		// Here currentSize will hold the index 
-		// of the last element.
-		return stack[currentSize];
+		return valueToBeReturned;
 
 	}
 
-	public int push(int item) {
+	public int enqueue(int item) {
 
-		// If stack is already full.
+		// If queue is already full.
 		if (currentSize == maxSize) {
 			return Integer.MIN_VALUE;
 		}
 
-		stack[currentSize++] = item;
+		queue[currentSize++] = item;
 
 		return item;
 	}
 
-	// Method implementing binary search on stack array.
+	// Method implementing binary search on queue array.
 	public int search(int item) {
 
 		int lb = 0, ub = currentSize - 1, m;
@@ -69,9 +72,9 @@ public class StackUsingArray {
 
 			m = (lb + ub) / 2;
 
-			if (item < stack[m]) {
+			if (item < queue[m]) {
 				ub = m - 1;
-			} else if (item > stack[m]) {
+			} else if (item > queue[m]) {
 				lb = m + 1;
 			} else {
 				return m + 1;
@@ -85,19 +88,19 @@ public class StackUsingArray {
 		
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Enter size of stack: ");
+		System.out.print("Enter size of queue: ");
 		int maxSize = sc.nextInt();
 
-		StackUsingArray stack = new StackUsingArray(maxSize);
+		QueueUsingArray queue = new QueueUsingArray(maxSize);
 
 		boolean infinite = true;
 
 		while(infinite) {
 
-			System.out.println(	"Press 1 to test if stack is empty.\n" +
+			System.out.println(	"Press 1 to test if queue is empty.\n" +
 								"Press 2 to peek.\n" +
-								"Press 3 to pop.\n" +
-								"Press 4 to push.\n" +
+								"Press 3 to dequeue.\n" +
+								"Press 4 to enqueue.\n" +
 								"Press 5 to search.\n" +
 								"Press 0 to exit.\n");
 			System.out.print("Choice: ");
@@ -107,55 +110,55 @@ public class StackUsingArray {
 				
 				case 1:
 
-					System.out.println(stack.empty());
+					System.out.println(queue.empty());
 					break;
 
 				case 2:
 
-					if (stack.empty()) {
-						System.out.println("Stack is empty.");
+					if (queue.empty()) {
+						System.out.println("Queue is empty.");
 						break;
 					}
 
-					System.out.println("Topmost element is " + stack.peek());
+					System.out.println("Front element is " + queue.peek());
 					break;
 
 				case 3:
 
-					if (stack.empty()) {
-						System.out.println("Stackunderflow.");
+					if (queue.empty()) {
+						System.out.println("Queue is empty.");
 						break;
 					}
 
-					System.out.println("Popped element is " + stack.pop());
+					System.out.println("Dequeued element is " + queue.dequeue());
 					break;
 
 				case 4:
 
-					if (stack.currentSize == stack.maxSize) {
-						System.out.println("Stackoverflow.");
+					if (queue.currentSize == queue.maxSize) {
+						System.out.println("Queue is full.");
 						break;
 					}
 
 					System.out.print("Enter value: ");
 					int val = sc.nextInt();
 
-					stack.push(val);
+					queue.enqueue(val);
 
-					System.out.println("Current size of stack is " + stack.currentSize);
+					System.out.println("Current size of queue is " + queue.currentSize);
 					break;
 
 				case 5:
 
-					if (stack.empty()) {
-						System.out.println("Stackunderflow.");
+					if (queue.empty()) {
+						System.out.println("Queue is empty.");
 						break;
 					}
 
 					System.out.print("Enter search element: ");
 					int searchVal = sc.nextInt();
 
-					int searchResult = stack.search(searchVal);
+					int searchResult = queue.search(searchVal);
 
 					if (searchResult < 0) {
 						System.out.println("Search unsuccessful.");
