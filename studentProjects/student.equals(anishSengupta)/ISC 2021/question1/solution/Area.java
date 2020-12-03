@@ -1,4 +1,4 @@
-package questionA.solution;
+package question1.solution;
 
 public class Area extends Perimeter {
 

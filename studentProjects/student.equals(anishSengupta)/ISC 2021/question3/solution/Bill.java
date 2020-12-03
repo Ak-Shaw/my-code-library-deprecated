@@ -1,4 +1,4 @@
-package questionC.solution;
+package question3.solution;
 
 public class Bill extends Detail {
 
